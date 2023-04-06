@@ -50,7 +50,7 @@ optional arguments:
   -v, --verbose
 ```
 
-If a full evaluation is supposed to be conducted, set `args.start_idx = 0, args.verbose = True`. To look into the model behavior on the `i`-th test sample, set `args.start_idx = i, args.verbose = True`
+If a full evaluation is supposed to be conducted, set `args.start_idx = 0, args.verbose = False`. To look into the model behavior on the `i`-th test sample, set `args.start_idx = i, args.verbose = True`
 
 ## Citation
 
