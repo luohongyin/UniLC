@@ -156,7 +156,6 @@ def think_twice(claim, verify_prompt, searcher, search_mode):
     
     qa_str = gen_response_chat(
         prompt, t = 0.1, max_tok = 128, n = 1,
-        condition_str = '',
         system_info = system_info
     ).strip()
 
@@ -225,8 +224,7 @@ def verify_dataset(searcher, dataset, verify_prompt, args):
             prompt = f'{ent_prompt}\n\n{prompt}'
         
         verify_str = gen_response_chat(
-            prompt, t = 0.1, max_tok = 128, n = 1,
-            condition_str = '', system_info = system_info
+            prompt, t = 0.1, max_tok = 128, n = 1, system_info = system_info
         )
 
         if args.mode == 'fp':
@@ -268,11 +266,14 @@ def verify_dataset(searcher, dataset, verify_prompt, args):
         ]
         
         log_list.append('\n'.join(case_log))
+
+        if i % 100 == 0:
+            print(f'Processed {i + 1} claims.')
     
     open(f'log/{args.task}_{args.mode}_check_{args.exp_name}.log', 'w').write(
         '\n'.join(log_list)
     )
-    json.dump(wrong_list, open(f'log/{sys.argv[1]}_wrong_list_joint.json', 'w'))
+    json.dump(wrong_list, open(f'log/{args.task}_wrong_list_joint.json', 'w'))
     json.dump(verify_str_list, open(f'log/{args.task}_{args.mode}_verify_list_{args.exp_name}.json', 'w'))
     
     return crr / num_case
