@@ -1,0 +1,9 @@
+cache/*
+__py*
+impair/*
+log/*
+*.json
+openai.txt
+*.jsonl
+news/index/*
+news/embedding/*
