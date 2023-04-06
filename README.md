@@ -8,7 +8,7 @@ The code and data (ULSC benchmark) can be downloaded by
 ```
 git clone https://https://github.com/luohongyin/ULSC.git
 cd ULSC/
-base download.sh
+bash download.sh
 ```
 
 The evaluation corpora will be saved at `ULSC/ulsc_data/`
