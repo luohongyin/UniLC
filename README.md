@@ -1,17 +1,17 @@
-# ULSC - Unified language safety checking
+# UnifyLC - Unified language safety checking
 
 This repo contains the code and access to data used in the paper "Interpretable Unified Language Safety Checking".
 
 ## Code and data download
 
-The code and data (ULSC benchmark) can be downloaded by
+The code and data (UnifyLC benchmark) can be downloaded by
 ```
-git clone https://https://github.com/luohongyin/ULSC.git
-cd ULSC/
+git clone https://https://github.com/luohongyin/UnifyLC.git
+cd UnifyLC/
 bash download.sh
 ```
 
-The evaluation corpora will be saved at `ULSC/ulsc_data/`
+The evaluation corpora will be saved at `UnifyLC/ulsc_data/`
 
 ## Openai API key
 Write your openai api key in the `openai-key.txt` file or replace the corresponding code in `general_check.py`.
