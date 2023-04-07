@@ -1,32 +1,32 @@
-# UnifyLC - Unified language safety checking
+# UniLC - Unified language safety checking
 
 This repo contains the code and access to data used in the paper "Interpretable Unified Language Safety Checking".
 
 ## Code and data download
 
-The code and data (UnifyLC benchmark) can be downloaded by
+The code and data (UniLC benchmark) can be downloaded by
 ```
-git clone https://https://github.com/luohongyin/UnifyLC.git
-cd UnifyLC/
+git clone https://https://github.com/luohongyin/UniLC.git
+cd UniLC/
 bash download.sh
 ```
 
-The evaluation corpora will be saved at `UnifyLC/ulsc_data/`
+The evaluation corpora will be saved at `UniLC/ulsc_data/`
 
-## Openai API key
-Write your openai api key in the `openai-key.txt` file or replace the corresponding code in `general_check.py`.
+## OpenAI API key
+Paste your OpenAI API key in the `openai-key.txt` file or replace the corresponding code in `general_check.py` (line 20).
 
 ## Reproducing the experiments
 
 The experiments can be reproduced on four tasks:
 
 - Fact checking
-    - Climate: `climate`
-    - Health: `health`
+    - [Climate](https://www.sustainablefinance.uzh.ch/en/research/climate-fever.html): `climate`
+    - [PubHealth](https://www.aclweb.org/anthology/2020.emnlp-main.623): `health`
 - Hate speech
-    - Hate speech detection: `hsd`
+    - [Hate speech detection](https://www.aclweb.org/anthology/W18-5102): `hsd`
 - Stereotypes
-    - Social bias frame: `sbic`
+    - [Social bias frame](https://maartensap.com/social-bias-frames/): `sbic`
 
 with three different prompting modes:
 - Fully zero-shot (zero-cls): `zero`
