@@ -1,6 +1,6 @@
-# UniLC - Unified language safety checking
+# UniLC - Unified Language Checking
 
-This repo contains the code and access to data used in the paper "Interpretable Unified Language Safety Checking".
+This repo contains the code and access to data used in the paper "Interpretable Unified Language Checking".
 
 ## Code and data download
 
