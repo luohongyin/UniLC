@@ -237,7 +237,7 @@ def verify_dataset(searcher, dataset, verify_prompt, args):
         else:
             pred = 'REFUTES'
 
-        if args.verbose == 'true':
+        if args.verbose:
             print(claim)
             print(label)
             print('--')
