@@ -7,3 +7,4 @@ openai.txt
 *.jsonl
 news/index/*
 news/embedding/*
+*.pdf
