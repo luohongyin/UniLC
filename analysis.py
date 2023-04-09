@@ -21,7 +21,7 @@ parser = argparse.ArgumentParser(
 
 parser.add_argument('-t', '--task', type=str, help = 'Language safety checking task.')
 parser.add_argument('-m', '--mode', type=str, help = 'Prompting mode [zero | fp | cot].')
-parser.add_argument('-n', '--exp-name', type=int, help = 'Name tag for the experiment log file.')
+parser.add_argument('-n', '--exp-name', type=str, help = 'Name tag for the experiment log file.')
 
 def evaluate(case_str):
     if 'Label: SUPPORTS' in case_str:
@@ -120,7 +120,7 @@ def analyze_task_recog(task = 'climate', mode = 'base_few', exp_name = 'fact'):
     ax.legend(loc='center left', bbox_to_anchor=(1.1, 0.5), prop=font, frameon=False)
 
     plt.ioff()
-    plt.savefig(f'images/{task}_{mode}_{split}_task_cls.pdf')
+    plt.savefig(f'images/{task}_{mode}_{exp_name}_task_cls.pdf')
     plt.clf()
 
 
@@ -163,5 +163,4 @@ def compare(task):
 if __name__ == '__main__':
     args = parser.parse_args()
 
-    f1 = load_eval_data(task = args.task, mode = args.mode, exp_name = args.exp_name)
-    print(f'\nF1 = {f1}\n')
+    analyze_task_recog(task = args.task, mode = args.mode, exp_name = args.exp_name)

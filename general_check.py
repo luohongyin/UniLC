@@ -9,6 +9,8 @@ from collections import Counter
 from nltk.tokenize import regexp_tokenize, sent_tokenize
 from nltk.translate.bleu_score import sentence_bleu
 
+from analysis import load_eval_data
+
 try:
     from pyserini.search import FaissSearcher
 except:
@@ -302,4 +304,5 @@ if __name__ == '__main__':
     acc = verify_dataset(
         searcher, dataset, verify_prompt, args
     )
-    print(f'\nAcc = {acc}\n')
+    f1 = load_eval_data(task = args.task, mode = args.mode, exp_name = args.exp_name)
+    print(f'\nAcc = {acc}\nF1 = {f1}\n')
