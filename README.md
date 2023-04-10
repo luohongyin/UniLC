@@ -59,7 +59,7 @@ Please cite our paper if our code and data are helpful!
 @article{zhang2023interpretable,
   title={Interpretable Unified Language Safety Checking},
   author={Zhang, Tianhua and Luo, Hongyin and Chuang, Yung-Sung and Fang, Wei and Gaitskell, Luc and Hartvigsen, Thomas and Wu, Xixin and Fox, Danny and Meng, Helen and Glass, James},
-  journal={arXiv preprint arXiv:2304.x},
+  journal={arXiv preprint arXiv:2304.03728},
   year={2023}
 }
 ```
