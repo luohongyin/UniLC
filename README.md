@@ -68,4 +68,4 @@ Please cite our paper if our code and data are helpful!
 
 If there is any question, please submit an issue or contact:
 - Hongyin Luo: hyluo AT mit DOT edu
-- Tianhua Zhang: thzhang AT cuhk DOT edu DOT hk
+- Tianhua Zhang: thzhang AT link DOT cuhk DOT edu DOT hk
