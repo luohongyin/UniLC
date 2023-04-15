@@ -1,6 +1,6 @@
 # UniLC - Unified Language Checking
 
-This repo contains the code and access to data used in the paper "Interpretable Unified Language Checking".
+This repo contains the code and access to data used in the paper [Interpretable Unified Language Checking](https://arxiv.org/pdf/2304.03728.pdf).
 
 ## Code and data download
 
